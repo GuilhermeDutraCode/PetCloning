@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PetClonning</title>
+    <title>PetCloning</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+
+      <%= link_to 'Home', root_path %> |
+      <%= link_to 'All users', users_path %>
+
+      <%= yield %>
+
+    </div>
   </body>
 </html>
