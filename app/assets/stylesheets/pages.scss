@@ -1,42 +1,64 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+    max-width: 375px;
+}
 
-#hello {
-    color: green;
-    
+body {
 }
 
 .dogs-running{
     color: white;
     background-image: url(https://images.unsplash.com/photo-1579683571996-f3482b0907c2?crop=entropy&cs=tinysrgb&[…]b=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450);
+    background-size: 100%;
+    width: 320px;
+    height: 142px;
+    margin: 0 auto;
 }
 
 #cat {
-    height: 5.5em;
-    border-radius: 1em;
+    width: 100px;
+    height: 100px;
+    border-radius: 3em;
 }
 
 #dog {
-    width: 5.0em;
-    height: 5.5em;
-    border-radius: 1em;
+    width: 100px;
+    height: 100px;
+    border-radius: 3em;
 }
 
 #horse {
-    width: 5.0em;
-    height: 5.5em;
-    border-radius: 1em;
+    width: 100px;
+    height: 100px;
+    border-radius: 3em;
 }
 
-.animals-logos  {
+.animals-logos {
     display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .our-latest-post {
     display: flex;
     width: 10em;
+}
+
+#latest-posts {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.our-latest-post > div {
+    padding: 0.5em;
     
+    img {
+        border-radius: 0.2em;
+    }
+
+    p {
+        font-size: 10px;
+    }
 }
 
 .AGP {
@@ -50,6 +72,52 @@ img {
     height: 4.5em;
 }
 
+.lead-tech {
+    text-align: center;
+
+    h2 {
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
+
+#testimonials {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#hello {
+    color: #14ae5c;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#signup {
+   position: relative; 
+   width: 106px;
+   height: 40px;
+   left: 115px;
+}
+
+#personal-info {
+    padding-top: 2em;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    background-color: #e9e7e7;
+
+    h2 {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
+
 /* .catson {
     display: block;
 }
@@ -61,3 +129,10 @@ img {
 .horseon{
     display: block;
 } */
+
+// @media (min-width: 640px) {
+//     .container {
+//         display: flex;
+//     }
+// }
+
