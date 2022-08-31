@@ -29,6 +29,7 @@ gem "pry-rails"
 gem 'jquery-rails'
 gem 'bootstrap', '4.6.1'
 
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
