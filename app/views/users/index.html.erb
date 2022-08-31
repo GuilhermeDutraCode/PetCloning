@@ -2,7 +2,20 @@
 
 <h2><%= @users.count %> registered users</h2>
 
-<% @users.each do |user|%>
-    <p><%= user.firstName %> <%= user.lastName %>: <%= user.email %></p>
-<% end %>
 
+ <table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Pets</th>
+    </tr>
+
+    <% @users.each do |user|%>
+    <tr class="allusers">
+        <td><%= user.firstName %></td>
+        <td><%= user.email %></td>
+        <td><%= user.pets %></td>
+    </tr>
+    <% end %>
+
+</table> 
